@@ -1,0 +1,110 @@
+﻿@using CustomRoleBasedAuthenticationInASPNetMVC.Models
+@model CustomRoleBasedAuthenticationInASPNetMVC.Models.User
+
+@{
+    ViewBag.Title = "Delete";
+}
+<br/>
+<div class="panel panel-default">
+    <div class="panel-heading text-center">
+        <h3><strong>Delete User</strong></h3>
+    </div>
+    <div class="panel-body">
+        <div class="alert alert-danger">
+            <strong>Are you sure you want to delete this user?</strong>
+        </div>
+            <div class="form-horizontal">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "input-group-addon" })
+                            <div class="form-control">
+                                @Model.FirstName
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "input-group-addon" })
+                            <div class="form-control">
+                                @Model.LastName
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "input-group-addon" })
+                            <div class="form-control">
+                                @Model.UserName
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "input-group-addon" })
+                            <div class="form-control">
+                                @Model.Email
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <span class="btn btn-default">
+                                    <strong>Roles for this user <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></strong>
+                                </span>
+
+                            </div>
+                            <div class="panel-body">
+                                @{
+                                    if (Model.Roles.Any())
+                                    {
+                                        foreach (Role role in Model.Roles)
+                                        {
+                                            <span class="role btn btn-default">
+                                                <strong>@role.RoleName</strong>
+                                            </span>
+                                        }
+                                    
+                                    }
+                                    else
+                                    {
+                                        <span class="btn btn-default">
+                                            <strong>No role assigned to this user yet!</strong>
+                                        </span>
+                                    }
+                                }
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <br />
+
+                </div>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color text-center">
+                            <input type="submit" value="Delete" class="btn btn-danger"/>
+                            <a class="btn btn-primary" href="@Url.Action("UserList")">Back to List</a>
+                        </div>
+                    }
+            </div>
+
+        </div>
+    
+
+</div>

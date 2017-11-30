@@ -1,0 +1,48 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.form-horizontal .form-group {
+     margin-right: 0; 
+     margin-left: 0; 
+}
+
+.btn {
+    border-radius: 0 !important;
+    /*padding: 4px 12px;*/
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #000;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.controller-action {
+    margin-bottom: 10px;
+}
