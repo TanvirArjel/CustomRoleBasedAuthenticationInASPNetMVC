@@ -195,6 +195,10 @@
     <Compile Include="Migrations\201711300530268_InitialCreate2.Designer.cs">
       <DependentUpon>201711300530268_InitialCreate2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711300836048_RoleActionCategoryRemoved.cs" />
+    <Compile Include="Migrations\201711300836048_RoleActionCategoryRemoved.Designer.cs">
+      <DependentUpon>201711300836048_RoleActionCategoryRemoved.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PasswordResetModels.cs" />
     <Compile Include="Models\UserModels.cs" />
@@ -383,6 +387,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711300530268_InitialCreate2.resx">
       <DependentUpon>201711300530268_InitialCreate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711300836048_RoleActionCategoryRemoved.resx">
+      <DependentUpon>201711300836048_RoleActionCategoryRemoved.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

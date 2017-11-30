@@ -51,7 +51,6 @@ namespace CustomRoleBasedAuthenticationInASPNetMVC.Models
         public Role()
         {
             Users = new HashSet<User>();
-            ActionCategories = new HashSet<ActionCategory>();
             ControllerActions = new HashSet<ControllerAction>();
         }
 
@@ -69,7 +68,6 @@ namespace CustomRoleBasedAuthenticationInASPNetMVC.Models
         public string Description { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
-        public virtual ICollection<ActionCategory> ActionCategories { get; set; }
         public virtual ICollection<ControllerAction> ControllerActions { get; set; }
     }
 
@@ -77,7 +75,6 @@ namespace CustomRoleBasedAuthenticationInASPNetMVC.Models
     {
         public ActionCategory()
         {
-            Roles = new HashSet<Role>();
             ControllerActions = new List<ControllerAction>();
         }
         [Key]
@@ -92,7 +89,6 @@ namespace CustomRoleBasedAuthenticationInASPNetMVC.Models
 
         [Required]
         public string Description { get; set; }
-        public virtual ICollection<Role> Roles { get; set; }
         public virtual ICollection<ControllerAction> ControllerActions { get; set; }
     }
 

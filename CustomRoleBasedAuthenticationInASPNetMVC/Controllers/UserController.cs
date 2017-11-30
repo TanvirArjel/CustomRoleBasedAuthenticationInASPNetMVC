@@ -114,6 +114,7 @@ namespace CustomRoleBasedAuthenticationInASPNetMVC.Controllers
             return View(userLoginViewModel);
         }
 
+        [AllowAnonymous]
         public ActionResult LogOut()
         {
             Session.Remove("LoggedInUser");

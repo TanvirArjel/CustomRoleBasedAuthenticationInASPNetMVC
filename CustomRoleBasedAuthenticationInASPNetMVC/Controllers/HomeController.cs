@@ -10,12 +10,13 @@ namespace CustomRoleBasedAuthenticationInASPNetMVC.Controllers
     
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();
         }
 
-        [AuthorizedUser(UserRoles = "SuperAdmin")]
+        
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -23,7 +24,6 @@ namespace CustomRoleBasedAuthenticationInASPNetMVC.Controllers
             return View();
         }
 
-        [AuthorizedUser(UserRoles = "SuperAdmin Admin")]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

@@ -12,14 +12,19 @@ namespace CustomRoleBasedAuthenticationInASPNetMVC.CommonCode
         private static readonly UserDbContext _dbContext = new UserDbContext();
         public static bool IsUserAthorizedInAction(int  userId,string controllerName, string actionName)
         {
+            bool userAuthorizationStatus = false;
             ControllerAction controllerAction = _dbContext.ControllerActions.FirstOrDefault(x => x.ActionCategory.ActionCategoryName == controllerName && x.ActionName == actionName);
-            //bool userAuthorizationStatus = _dbContext.Users.Where(x => x.UserId == userId).Any(x => x.ControllerActions.Any(y => y.ActionId == controllerAction.ActionId));
-            return false;
+            if (controllerAction != null)
+            {
+                userAuthorizationStatus = _dbContext.Users.Where(u => u.UserId == userId).Any(u => u.Roles.Any(r => r.ControllerActions.Any(ca => ca.ActionName == actionName)));
+            }
+            
+            return userAuthorizationStatus;
         }
 
         public static bool IsUserSuperAdmin(int userId)
         {
-            bool roleStatus = _dbContext.Users.Where(x => x.UserId == userId).SelectMany(x => x.Roles).Any(x => x.RoleName == "SuperAdmin");
+            bool roleStatus = _dbContext.Users.Where(x => x.UserId == userId).Any(u => u.Roles.Any(r => r.RoleName == "SuperAdmin"));
             return roleStatus;
         }
     }
