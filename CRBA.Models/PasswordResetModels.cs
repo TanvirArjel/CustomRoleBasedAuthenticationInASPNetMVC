@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace CustomRoleBasedAuthenticationInASPNetMVC.Models
+namespace CRBA.Models
 {
     public class UserPasswordReset
     {

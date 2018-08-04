@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CustomRoleBasedAuthenticationInASPNetMVC.CommonCode
+namespace CRBA.ServiceLayer
 {
     public static class GetAllControllerAndActionNames
     {

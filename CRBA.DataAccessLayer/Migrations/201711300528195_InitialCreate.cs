@@ -1,4 +1,4 @@
-namespace CustomRoleBasedAuthenticationInASPNetMVC.Migrations
+namespace CRBA.DataAccessLayer.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

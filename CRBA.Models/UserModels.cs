@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CustomRoleBasedAuthenticationInASPNetMVC.Models
+namespace CRBA.Models
 {
     public class User
     {

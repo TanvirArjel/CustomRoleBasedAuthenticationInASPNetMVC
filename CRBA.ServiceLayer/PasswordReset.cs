@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using CustomRoleBasedAuthenticationInASPNetMVC.DataAccessLayer;
-using CustomRoleBasedAuthenticationInASPNetMVC.Models;
+using CRBA.Models;
+using CRBA.DataAccessLayer;
 
 
-namespace CustomRoleBasedAuthenticationInASPNetMVC.CommonCode
+namespace CRBA.ServiceLayer
 {
     public class PasswordReset : IDisposable
     {

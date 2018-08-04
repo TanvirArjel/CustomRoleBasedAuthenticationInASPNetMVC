@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRoleBasedAuthenticationInASPNetMVC", "CustomRoleBasedAuthenticationInASPNetMVC\CustomRoleBasedAuthenticationInASPNetMVC.csproj", "{934289B2-D6B6-4B23-8C00-257F06761093}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRBA.Models", "CRBA.Models\CRBA.Models.csproj", "{E3898989-6370-44B4-9795-68C46F58B02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRBA.DataAccessLayer", "CRBA.DataAccessLayer\CRBA.DataAccessLayer.csproj", "{BBDEA024-27DD-4C3F-8509-90EC9D48D746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRBA.ViewModels", "CRBA.ViewModels\CRBA.ViewModels.csproj", "{D93B4309-AC8D-4645-886A-C5B92B45A01F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRBA.Attributes", "CRBA.Attributes\CRBA.Attributes.csproj", "{107A4D64-E1DB-4F68-9F9E-78DFB0DE52F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRBA.ServiceLayer", "CRBA.ServiceLayer\CRBA.ServiceLayer.csproj", "{8BD072F3-A6A4-4993-A1DD-7CC7B3C2D3FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{934289B2-D6B6-4B23-8C00-257F06761093}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{934289B2-D6B6-4B23-8C00-257F06761093}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{934289B2-D6B6-4B23-8C00-257F06761093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3898989-6370-44B4-9795-68C46F58B02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3898989-6370-44B4-9795-68C46F58B02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3898989-6370-44B4-9795-68C46F58B02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3898989-6370-44B4-9795-68C46F58B02C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDEA024-27DD-4C3F-8509-90EC9D48D746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDEA024-27DD-4C3F-8509-90EC9D48D746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDEA024-27DD-4C3F-8509-90EC9D48D746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDEA024-27DD-4C3F-8509-90EC9D48D746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D93B4309-AC8D-4645-886A-C5B92B45A01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93B4309-AC8D-4645-886A-C5B92B45A01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93B4309-AC8D-4645-886A-C5B92B45A01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93B4309-AC8D-4645-886A-C5B92B45A01F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{107A4D64-E1DB-4F68-9F9E-78DFB0DE52F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{107A4D64-E1DB-4F68-9F9E-78DFB0DE52F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{107A4D64-E1DB-4F68-9F9E-78DFB0DE52F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{107A4D64-E1DB-4F68-9F9E-78DFB0DE52F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD072F3-A6A4-4993-A1DD-7CC7B3C2D3FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD072F3-A6A4-4993-A1DD-7CC7B3C2D3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD072F3-A6A4-4993-A1DD-7CC7B3C2D3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD072F3-A6A4-4993-A1DD-7CC7B3C2D3FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

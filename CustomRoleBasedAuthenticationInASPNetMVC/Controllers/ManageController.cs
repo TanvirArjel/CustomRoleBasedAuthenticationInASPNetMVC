@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using CustomRoleBasedAuthenticationInASPNetMVC.CommonCode;
-using CustomRoleBasedAuthenticationInASPNetMVC.Models;
+using CRBA.Models;
+using CRBA.ServiceLayer;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
-using CustomRoleBasedAuthenticationInASPNetMVC.DataAccessLayer;
-using CustomRoleBasedAuthenticationInASPNetMVC.ViewModels;
+using CRBA.DataAccessLayer;
+using CRBA.ViewModels;
 
 namespace CustomRoleBasedAuthenticationInASPNetMVC.Controllers
 {

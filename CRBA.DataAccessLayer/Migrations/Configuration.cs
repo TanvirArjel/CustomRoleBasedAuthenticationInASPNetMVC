@@ -1,18 +1,18 @@
-namespace CustomRoleBasedAuthenticationInASPNetMVC.Migrations
+namespace CRBA.DataAccessLayer.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<CustomRoleBasedAuthenticationInASPNetMVC.DataAccessLayer.UserDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<CRBA.DataAccessLayer.UserDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(CustomRoleBasedAuthenticationInASPNetMVC.DataAccessLayer.UserDbContext context)
+        protected override void Seed(CRBA.DataAccessLayer.UserDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

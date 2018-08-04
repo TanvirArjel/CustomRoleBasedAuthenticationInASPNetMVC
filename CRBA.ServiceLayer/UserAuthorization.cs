@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CustomRoleBasedAuthenticationInASPNetMVC.DataAccessLayer;
-using CustomRoleBasedAuthenticationInASPNetMVC.Models;
+using CRBA.Models;
+using CRBA.DataAccessLayer;
 
-namespace CustomRoleBasedAuthenticationInASPNetMVC.CommonCode
+namespace CRBA.ServiceLayer
 {
     public static class UserAuthorization
     {

@@ -1,6 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
-using CustomRoleBasedAuthenticationInASPNetMVC.CustomAttributes;
+using CRBA.Attributes;
 
 namespace CustomRoleBasedAuthenticationInASPNetMVC
 {

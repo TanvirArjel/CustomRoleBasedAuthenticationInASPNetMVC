@@ -5,9 +5,9 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using CustomRoleBasedAuthenticationInASPNetMVC.DataAccessLayer;
-using CustomRoleBasedAuthenticationInASPNetMVC.Models;
-using CustomRoleBasedAuthenticationInASPNetMVC.ViewModels;
+using CRBA.DataAccessLayer;
+using CRBA.Models;
+using CRBA.ViewModels;
 using Microsoft.AspNet.Identity;
 
 namespace CustomRoleBasedAuthenticationInASPNetMVC.Controllers

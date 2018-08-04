@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using CustomRoleBasedAuthenticationInASPNetMVC.Models;
+using CRBA.Models;
 
-namespace CustomRoleBasedAuthenticationInASPNetMVC.DataAccessLayer
+namespace CRBA.DataAccessLayer
 {
     public class UserDbContext : DbContext
     {

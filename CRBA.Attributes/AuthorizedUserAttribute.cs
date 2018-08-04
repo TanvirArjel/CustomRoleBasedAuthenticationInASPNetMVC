@@ -5,10 +5,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using CustomRoleBasedAuthenticationInASPNetMVC.CommonCode;
-using CustomRoleBasedAuthenticationInASPNetMVC.Models;
+using CRBA.ServiceLayer;
+using CRBA.Models;
 
-namespace CustomRoleBasedAuthenticationInASPNetMVC.CustomAttributes
+namespace CRBA.Attributes
 {
 
     

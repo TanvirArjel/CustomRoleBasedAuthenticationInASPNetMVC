@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CustomRoleBasedAuthenticationInASPNetMVC.ViewModels
+namespace CRBA.ViewModels
 {
     public class UserRegistrationViewModel
     {
